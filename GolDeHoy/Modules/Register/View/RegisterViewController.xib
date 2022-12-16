@@ -81,6 +81,7 @@
                     <buttonConfiguration key="configuration" style="plain" title="Registrarse" cornerStyle="large">
                         <backgroundConfiguration key="background">
                             <color key="backgroundColor" name="buttonBackground"/>
+                            <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </backgroundConfiguration>
                         <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                     </buttonConfiguration>
