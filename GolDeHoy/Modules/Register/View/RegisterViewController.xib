@@ -5,11 +5,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="GolDeHoy" customModuleProvider="target">
             <connections>
+                <outlet property="buttonRegister" destination="rO7-Vd-Ii7" id="HH7-89-fzt"/>
                 <outlet property="imageProfile" destination="Hqt-lH-4Ow" id="6gX-mi-G6l"/>
                 <outlet property="labelEmail" destination="XPM-WW-IkA" id="qma-zg-3xw"/>
                 <outlet property="labelName" destination="gC2-mb-8Fg" id="hFI-Fr-XXN"/>
@@ -42,35 +44,50 @@
                 </stackView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOd-Wg-Hct">
                     <rect key="frame" x="20" y="262" width="374" height="40"/>
+                    <color key="backgroundColor" name="backgroundColor"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textfieldName:" destination="-1" eventType="editingChanged" id="yVS-Gv-r4K"/>
+                    </connections>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC2-mb-8Fg">
-                    <rect key="frame" x="20" y="322" width="50" height="26"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your user name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC2-mb-8Fg">
+                    <rect key="frame" x="20" y="322" width="374" height="26"/>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3kx-Tg-o4v">
                     <rect key="frame" x="20" y="356" width="374" height="34"/>
+                    <color key="backgroundColor" name="backgroundColor"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textfieldEmail:" destination="-1" eventType="editingDidEnd" id="oQW-jY-Msp"/>
+                    </connections>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPM-WW-IkA">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPM-WW-IkA">
                     <rect key="frame" x="20" y="410" width="374" height="27"/>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bUr-dL-SLy">
                     <rect key="frame" x="20" y="456" width="374" height="34"/>
+                    <color key="backgroundColor" name="backgroundColor"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textfieldPassword:" destination="-1" eventType="editingChanged" id="aJN-cX-rWB"/>
+                    </connections>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaI-9E-iev">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaI-9E-iev">
                     <rect key="frame" x="20" y="510" width="374" height="32"/>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO7-Vd-Ii7">
@@ -122,6 +139,7 @@
                 <constraint firstItem="vaI-9E-iev" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ldR-oH-lbb"/>
                 <constraint firstItem="68T-gU-50d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="mgD-XG-bF1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="68T-gU-50d" secondAttribute="trailing" constant="20" id="nvG-pm-xTo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gC2-mb-8Fg" secondAttribute="trailing" constant="20" id="sBV-3G-inv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="XPM-WW-IkA" secondAttribute="bottom" constant="425" id="uL8-5a-7ew"/>
                 <constraint firstItem="MOd-Wg-Hct" firstAttribute="top" secondItem="68T-gU-50d" secondAttribute="bottom" constant="20" id="uNq-W1-j9o"/>
                 <constraint firstItem="XPM-WW-IkA" firstAttribute="top" secondItem="3kx-Tg-o4v" secondAttribute="bottom" constant="20" id="wGN-nM-r4v"/>
@@ -131,8 +149,14 @@
     </objects>
     <resources>
         <image name="Ball" width="64" height="64"/>
+        <namedColor name="backgroundColor">
+            <color red="0.8784313725490196" green="0.91764705882352937" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="buttonBackground">
             <color red="0.058823529411764705" green="0.18431372549019609" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

@@ -28,7 +28,6 @@ class LoginViewController: UIViewController {
         labelPassword.text = "Required"
         textfieldName.text = ""
         textfieldPassword.text = ""
-        
     }
     
     func checkForValidForm() {
@@ -84,7 +83,6 @@ class LoginViewController: UIViewController {
                 if let errorMessage = invalidEmail(email){
                     labelName.text = errorMessage
                     labelName.isHidden = false
-                    
                 }else{
                     labelName.isHidden = true
                 }
