@@ -28,7 +28,6 @@ class LoginViewController: UIViewController {
         labelPassword.text = "Required"
         textfieldName.text = ""
         textfieldPassword.text = ""
-        
     }
     
     func checkForValidForm() {
@@ -84,7 +83,6 @@ class LoginViewController: UIViewController {
                 if let errorMessage = invalidEmail(email){
                     labelName.text = errorMessage
                     labelName.isHidden = false
-                    
                 }else{
                     labelName.isHidden = true
                 }
@@ -106,7 +104,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func buttonLogin(_ sender: Any) {
         if textfieldName.text!.contains("@") && textfieldName.text!.contains(".com"){
-            presentHome()
+            presentTabBar()
         }else {
             verifyEmail()
         }
@@ -123,10 +121,10 @@ class LoginViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
-    func presentHome(){
-        let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        homeViewController.modalPresentationStyle = .overFullScreen
-        self.present(homeViewController, animated: true)
+    func presentTabBar(){
+        let tabBarViewController = TabBarViewController(nibName: "TabBarViewController", bundle: nil)
+        tabBarViewController.modalPresentationStyle = .overFullScreen
+        self.present(tabBarViewController, animated: true)
     }
     
     func presentRegister(){
