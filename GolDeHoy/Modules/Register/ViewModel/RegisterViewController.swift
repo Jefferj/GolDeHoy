@@ -119,7 +119,7 @@ class RegisterViewController: UIViewController {
     
     @IBAction func buttonRegister(_ sender: Any) {
         if textfieldEmail.text!.contains("@") && textfieldEmail.text!.contains(".com"){
-            presentHome()
+            presentTabBar()
         }else{
             verifyEmail()
         }
@@ -131,10 +131,10 @@ class RegisterViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
-    func presentHome() {
-        let vc = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        vc.modalPresentationStyle = .overFullScreen
-        self.present(vc, animated: true)
+    func presentTabBar(){
+        let tabBarViewController = TabBarViewController(nibName: "TabBarViewController", bundle: nil)
+        tabBarViewController.modalPresentationStyle = .overFullScreen
+        self.present(tabBarViewController, animated: true)
         resetForm()
     }
 }

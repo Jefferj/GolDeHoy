@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		611DA60F294A76D40047DAFA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611DA60D294A76D40047DAFA /* LoginViewController.swift */; };
 		611DA610294A76D40047DAFA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 611DA60E294A76D40047DAFA /* LoginViewController.xib */; };
+		615C46F029522B9800D53EAB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C46EF29522B9800D53EAB /* TabBarViewController.swift */; };
+		615C46F329522CCD00D53EAB /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C46F129522CCD00D53EAB /* FavoritesViewController.swift */; };
+		615C46F429522CCD00D53EAB /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615C46F229522CCD00D53EAB /* FavoritesViewController.xib */; };
+		615C46F729522CFA00D53EAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C46F529522CFA00D53EAB /* ProfileViewController.swift */; };
+		615C46F829522CFA00D53EAB /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615C46F629522CFA00D53EAB /* ProfileViewController.xib */; };
 		61728E602949311600E1A1AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61728E5F2949311600E1A1AD /* AppDelegate.swift */; };
 		61728E622949311600E1A1AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61728E612949311600E1A1AD /* SceneDelegate.swift */; };
 		61728E642949311600E1A1AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61728E632949311600E1A1AD /* ViewController.swift */; };
@@ -23,6 +28,11 @@
 /* Begin PBXFileReference section */
 		611DA60D294A76D40047DAFA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		611DA60E294A76D40047DAFA /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		615C46EF29522B9800D53EAB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		615C46F129522CCD00D53EAB /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		615C46F229522CCD00D53EAB /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		615C46F529522CFA00D53EAB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		615C46F629522CFA00D53EAB /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		61728E5C2949311600E1A1AD /* GolDeHoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolDeHoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61728E5F2949311600E1A1AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61728E612949311600E1A1AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +57,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		615C46E729522AFB00D53EAB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				615C46EB29522B1D00D53EAB /* Service */,
+				615C46EA29522B1300D53EAB /* View */,
+				615C46E929522B0D00D53EAB /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		615C46E829522B0100D53EAB /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				615C46EE29522B2F00D53EAB /* Service */,
+				615C46ED29522B2A00D53EAB /* View */,
+				615C46EC29522B2400D53EAB /* ViewModel */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		615C46E929522B0D00D53EAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				615C46F529522CFA00D53EAB /* ProfileViewController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		615C46EA29522B1300D53EAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				615C46F629522CFA00D53EAB /* ProfileViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		615C46EB29522B1D00D53EAB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		615C46EC29522B2400D53EAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				615C46F129522CCD00D53EAB /* FavoritesViewController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		615C46ED29522B2A00D53EAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				615C46F229522CCD00D53EAB /* FavoritesViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		615C46EE29522B2F00D53EAB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		61728E532949311600E1A1AD = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +175,8 @@
 		61803B1A294BBD3A00667873 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				615C46E829522B0100D53EAB /* Favorites */,
+				615C46E729522AFB00D53EAB /* Profile */,
 				61FF5057294D0EA9004D59AF /* Home */,
 				61803B22294BBDAD00667873 /* Register */,
 				61803B1D294BBD5700667873 /* Login */,
@@ -215,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				61FF505C294D0EF1004D59AF /* HomeViewController.xib */,
+				615C46EF29522B9800D53EAB /* TabBarViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,10 +363,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615C46F829522CFA00D53EAB /* ProfileViewController.xib in Resources */,
 				61728E6C2949311A00E1A1AD /* LaunchScreen.storyboard in Resources */,
 				61728E692949311A00E1A1AD /* Assets.xcassets in Resources */,
 				61FF505E294D0EF1004D59AF /* HomeViewController.xib in Resources */,
 				611DA610294A76D40047DAFA /* LoginViewController.xib in Resources */,
+				615C46F429522CCD00D53EAB /* FavoritesViewController.xib in Resources */,
 				61803B2A294BBEDD00667873 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,8 +382,11 @@
 			files = (
 				611DA60F294A76D40047DAFA /* LoginViewController.swift in Sources */,
 				61803B29294BBEDD00667873 /* RegisterViewController.swift in Sources */,
+				615C46F329522CCD00D53EAB /* FavoritesViewController.swift in Sources */,
 				61728E642949311600E1A1AD /* ViewController.swift in Sources */,
 				61728E602949311600E1A1AD /* AppDelegate.swift in Sources */,
+				615C46F029522B9800D53EAB /* TabBarViewController.swift in Sources */,
+				615C46F729522CFA00D53EAB /* ProfileViewController.swift in Sources */,
 				61728E622949311600E1A1AD /* SceneDelegate.swift in Sources */,
 				61FF505D294D0EF1004D59AF /* HomeViewController.swift in Sources */,
 			);

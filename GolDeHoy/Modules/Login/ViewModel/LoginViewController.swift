@@ -104,7 +104,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func buttonLogin(_ sender: Any) {
         if textfieldName.text!.contains("@") && textfieldName.text!.contains(".com"){
-            presentHome()
+            presentTabBar()
         }else {
             verifyEmail()
         }
@@ -121,10 +121,10 @@ class LoginViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
-    func presentHome(){
-        let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        homeViewController.modalPresentationStyle = .overFullScreen
-        self.present(homeViewController, animated: true)
+    func presentTabBar(){
+        let tabBarViewController = TabBarViewController(nibName: "TabBarViewController", bundle: nil)
+        tabBarViewController.modalPresentationStyle = .overFullScreen
+        self.present(tabBarViewController, animated: true)
     }
     
     func presentRegister(){
